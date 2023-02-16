@@ -14,13 +14,13 @@ app.post('/api/data', (req, res) => {
   };
   //res.send(data);
   // res.status(200).json(data);
-  const jsonData = JSON.stringify(data);
-  res.send(jsonData);
-  console.log(jsonData);
+  
+  res.send(JSON.stringify(data));
+  
 });
 
 app.listen(9000, () => {
   console.log('Server listening on port 9000');
 });
 
-console.log(jsonData);
+
