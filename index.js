@@ -12,8 +12,8 @@ app.post('/api/data', (req, res) => {
     "severity": "warning",
     "message": "Employee no longer works for company."
   };
-  
-  res.status(200).json(data);
+  res.send(data);
+  // res.status(200).json(data);
   console.log(data);
 });
 
