@@ -29,7 +29,7 @@ app.post('/api/data', (req, res) => {
   
 });
 
-//login beyond cloud resources
+//login beyond cloud  resource
 app.get("/super-secure-resource", (req, res) => {
   res
     .status(401)
